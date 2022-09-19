@@ -1,0 +1,1716 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px; 
+    
+}
+
+body{
+   
+    width: 100%;
+    height: 100vh;
+    margin:0px;
+    padding: 0px;
+    font-family: "Aref Ruqaa Ink";
+    background-image: url("Bild/Background/Galaxy.gif");
+}
+
+
+/*----------------//--->HEADER/MENU<---//----------------------*/
+
+#Menu{
+    
+    width:100%;
+    height:50px;
+    padding: 30px;
+    position: fixed;
+    margin: 0px;
+    z-index: 1000;
+    top:0;
+    background-image: url("Bild/Background/Background.jpg");
+    opacity: 0.9;
+
+}
+
+ul.oe_menu{          /*Menu*/
+	list-style:none;
+	width:80%;
+    height: 30px;
+    margin-left:500px;
+    margin-top: -15px;
+	float:left;
+	clear:both;
+    
+}
+
+.MenuBar{
+
+    width: 150px;
+    height: 50px;
+    display:inline-block;
+    margin-left: 80px;
+    margin-top: -5px;
+}
+
+.oe_menu, a{
+
+    position: relative;
+    color: white;
+}
+
+
+.oe_menu a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: fuchsia;
+    /*animacion de derecha a izquierda*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.oe_menu a:hover:after {
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1);
+    text-decoration: none;
+    color: fuchsia;
+}
+
+
+ul.oe_menu > li{
+	width:100px;
+	height:20px;
+	float:left;
+    display: list-item;
+    margin-left:40px;
+    cursor: pointer;
+    
+}
+
+
+ul.oe_menu:hover {
+    background-position: right;
+    color: fuchsia;
+}
+
+ul.oe_menu > li > a{
+	display:block;
+    opacity: 0.9;
+	text-decoration:none;
+	font-size:14pt;
+	width:150px;
+	height:40px;
+	padding:5px;  
+    color:white;
+    margin-top: -5px;
+    position: relative;
+  
+}
+
+
+ul.oe_menu > li > a:hover,
+ul.oe_menu > li.selected > a{
+
+    font-weight: bold;
+    font-size:14pt;
+    color: fuchsia;
+    
+    
+}
+
+
+/*------------------------//FONT-STYLE//----------------------------------------------*/
+
+h1 {
+    
+    font-size: 40pt;
+    font-weight: bold;
+    color:white;
+   
+}
+
+h2 {
+    
+    font-size: 30pt;
+    color: white;
+    text-align: center;
+   
+}
+
+h3 {
+    
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h4{
+
+    font-size: 30pt;
+    color: fuchsia;
+    text-align: center;
+    
+}
+
+h5{
+
+    font-size: 40pt;
+    color: white;
+    text-align: center;
+    
+}
+
+h6{
+
+    font-size: 22pt;
+    color: white;
+    text-align: center;
+    
+}
+
+p{
+
+    font-size: 16pt;
+    color:white;
+    text-align: left;
+}
+
+
+.Font1{
+
+    font-size:20pt;
+    color:white;
+    text-align: center;
+}
+
+.Font2{
+
+    font-size:42pt;
+    color:white;
+    text-align:center;
+   
+}
+
+.Font3{
+
+    font-size:50pt;
+    color:fuchsia;
+    font-weight: bold;
+    text-align:center;
+   
+}
+
+.Font4{
+
+    font-size:18pt;
+    color:fuchsia;
+    text-align:left;
+    
+}
+
+.Font5{
+
+    font-size:24pt;
+    font-weight: bold;
+    color:fuchsia;
+    text-align: center;
+    
+}
+
+.Font6{
+
+    font-size:60pt;
+    color:fuchsia;
+    text-align:left;
+    font-weight: bold;
+    
+}
+
+.Font7{
+
+    font-size:60pt;
+    color:fuchsia;
+    font-weight: bold;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;  
+}
+
+.Font8{
+
+    font-size:50pt;
+    font-weight: bold;
+    color:fuchsia;
+    text-align: left;  
+}
+
+.Font9{
+
+    font-size:50pt;
+    font-weight: bold;
+    color:fuchsia;
+    text-align: left;
+    
+}
+
+.Font10{
+
+    font-size:30pt;
+    font-weight: bold;
+    color:fuchsia;
+    text-align: center;
+    
+}
+
+/*--------------->#mySlider.JS - Carousel <---------------------------*/
+
+/*----->Slider1<--------*/
+
+.containercarousel1{
+    width:100%;
+    height: 900px;
+    margin-top: 5px;
+    max-width: 1600px;
+     
+}
+
+.intro1{
+    
+    width:1550px;
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+    padding: 30px;
+    background-image: url("Bild/Background/Galaxy.gif");
+}
+
+
+.Biography1{
+
+    width: 900px;
+    height: 450px;
+    padding-left: 30px;
+    margin-top: 50px; 
+    
+}
+
+/*Button Slider*/
+
+#Click{
+
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: white;
+    border: 2px solid silver;
+    background:linear-gradient(to right, transparent 50%, rgb(244, 36, 188) 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease; 
+
+}
+
+#Click:hover {
+    background-position: right;
+    color: white;
+}
+
+
+.Image{    /*Slider Icon */
+    width: 600px;
+    height: 480px;
+    padding-left: 50px;
+    margin-top: 80px;
+    display: flex;
+    animation: movimiento 2.5s linear infinite;
+   
+}
+
+.IconImg{
+
+    width: 300px;
+    height: 250px;
+    animation: movimiento 2.5s linear infinite;
+   
+}
+/*------------------------//HOME PAGE/----------------------------------------------*/
+
+#MyCV{
+
+    width: 1200px;
+    height: 630px;
+    margin-left: 200px;
+    margin-top: -160px;
+   
+}
+
+#MyProfil{
+
+    width:1100px;
+    height:500px;
+    margin-top: 50px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid silver;
+    animation: movimiento 2.5s linear infinite;
+      
+}
+
+.MyIntro1{
+
+    width:700px;
+    height:500px;
+    padding: 20px; 
+    margin-left: 20px;
+   
+}
+
+.MyPhotoContainer{
+    width:280px;
+    height:250px;
+    cursor: pointer;
+    border:2px solid silver;
+    position: relative;
+    border-radius: 5px;
+    top:70px;
+    right:90px;
+    z-index: 0;  
+}
+
+.MyPhotoContainer:hover{
+
+    transform: scale(1.15);
+}
+
+.MyPhoto{
+
+    width:280px;
+    height:240px;
+    background-color:black;
+    position: relative;
+    border:2px solid silver;
+    top:50px;
+    border-radius: 5px;
+    left:100px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.MyPhoto:hover { filter:grayscale(100%);opacity:.5;}
+
+.Netz1{
+    width: 70px;
+    height: 200px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 2px solid silver;
+    margin-left: 1220px;
+    margin-top: -350px; 
+}
+
+.Git1,.Git2,.Git3{
+
+    width: 50px;
+    height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    transform: rotate(360deg); 
+}
+
+.Git1:hover{
+
+    transform: scale(1.15);
+}
+
+.Git2:hover{
+
+    transform: scale(1.15);
+}
+
+.Git3:hover{
+
+    transform: scale(1.15);
+}
+
+.Netz2{
+    width: 250px;
+    height: 60px;
+    padding: 5px;
+    border-bottom: 2px solid silver;
+    margin-top: -130px;
+    margin-left: -270px;
+    transform: rotate(270deg); 
+}
+
+.ContainerIntro1{
+
+    width:1200px;
+    height: 1200px;
+    margin-top: 50px;
+    margin-left:220px;
+}
+
+#Projekt{
+
+    width: 1100px;
+    height: 800px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction:row;
+    cursor: pointer;
+}
+
+
+#Logo{    /*Logo Projekt*/
+
+    margin-left: 50px;
+    cursor: pointer;
+    animation: movimiento 2.5s linear infinite;
+}
+
+#Logo:hover { filter:saturate(200%);}
+
+
+.Screen1{
+
+    width: 700px;
+    height: 800px;
+    padding: 30px;
+    cursor: pointer;
+    animation: movimiento 2.5s linear infinite;
+}
+
+.Screen2{
+
+    width: 750px;
+    height: 800px;
+    padding: 30px;
+    cursor: pointer;
+    animation: movimiento 2.5s linear infinite;
+   
+}
+
+.Screen1:hover{filter:saturate(150%);}
+.Screen2:hover{filter:saturate(150%);}
+
+
+.ContainerIntro2{
+
+    width:1000px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+
+.MyLogo{  /*My personal logo */
+
+    width: 300px;
+    height: 180px;
+    cursor: pointer;
+     
+}
+
+.MyLogo:hover{filter:saturate(200%);}
+
+
+#Menssage{    /*Button Say Hello!*/
+    border: none;
+    cursor: pointer;
+    margin-left: 350px;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    color: white;
+    border: 2px solid silver;
+    background:linear-gradient(to right, transparent 50%, rgb(244, 36, 188) 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease;  
+}
+
+
+#Menssage:hover {
+    background-position: right;
+    color: white;
+}
+
+
+.line1{  /*hr 1*/
+
+    width: 1100px;
+    height: 2px;
+    margin-left: 0px;
+    background-color: silver;
+    border:2px solid white;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.line2{ /*hr 2*/
+
+    width: 1300px;
+    height: 2px;
+    margin-left: 80px;
+    background-color: silver;
+    border:2px solid white;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.line3{ /*hr 3*/
+
+    width: 1230px;
+    height: 2px;
+    margin-left: -5px;
+    background-color: silver;
+    border:2px solid white;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+
+#Formation{
+
+    width:1250px;
+    height:600px;
+    margin-left: 150px;
+    margin-top: 150px;
+    
+}
+
+#Formation1{
+
+    width:1300px;
+    height:350px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+
+#Formation2{
+
+    width:1300px;
+    height:350px;
+    margin-left: 100px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+
+.ContainerEduc1{
+
+    width:550px;
+    height:350px;
+    padding: 40px;
+    margin-left: -50px;
+    margin-top: 50px;
+    border: 2px solid silver;
+    animation: movimiento 2.5s linear infinite;
+
+}
+
+.ContainerEduc2{
+
+    width:550px;
+    height:350px;
+    padding: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 2px solid silver;
+    animation: movimiento 2.5s linear infinite;
+}
+
+.ContainerEduc1:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.ContainerEduc2:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+#Experience{
+
+    width:1300px;
+    height:600px;
+    margin-left: 130px;
+    padding: 50px;
+    margin-top: 100px;
+   
+}
+
+.Experience{
+
+    width:550px;
+    height:350px;
+    padding: 40px;
+    margin-top: 70px;
+    margin-left: 300px;
+    border: 2px solid silver;
+    animation: movimiento 2.5s linear infinite;
+}
+
+.Experience:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#Kenntnisse{
+
+    width:1300px;
+    height:3050px;
+    margin-left: 110px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#Skils{
+
+    width:1000px;
+    height:2850px;
+    padding: 80px;
+    margin-left: 100px;
+  
+}
+
+.Tabla1,.Tabla2,.Tabla3,.Tabla4,.Tabla5,.Tabla6{
+
+    width: 600px;
+    margin-top: 60px;
+    margin-left: 120px;
+    height:50px;
+    animation: movimiento 2.5s linear infinite;
+}
+
+.Tabla1:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Tabla2:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Tabla3:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Tabla4:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Tabla5:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Tabla6:hover{
+
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+tr,td{
+   
+    width: 800px;
+    height: 10px;
+    border: 2px solid silver;
+    padding: 10px;
+}
+
+
+/*---------------------------//GALLERY//-------------------------------*/
+
+.img-gallery{
+
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-top: 10px;
+    animation: movimiento 2.5s linear infinite;
+   
+}
+
+.Back{                       /*GO BACK*/
+    width: 120px;
+    height: 50px;
+    padding: 2px;
+    margin-left: 30px;
+    margin-top: 100px;
+    border:2px solid silver;
+    border-radius: 20px;
+}
+
+.img-gallery img{
+
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.img-gallery img:hover{
+
+    transform: scale(1.1);
+}
+
+.ful-img{
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-top: 50px;
+    background-color: black;
+    top: 0;
+    left:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.ful-img span{
+
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.ful-img img{
+   width: 90%;
+   max-width: 600px;
+}
+
+.Phrase{
+
+    width: 1000px;
+    height: 300px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+
+
+
+/*------------------------//FOOTER//----------------------------------------------*/
+
+#ContainerFooter{
+
+    width:100%;
+    height:600px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Contact1{
+
+    width:100%;
+    height:450px;
+    padding: 100px;
+    margin-top: 100px;
+    background-image: url("Bild/Background/Background.jpg");
+    
+}
+
+.Contact2{
+    width:100%;
+    height:400px;
+    margin-top: -100px;
+    background-image: url("Bild/Background/Background.jpg");
+
+}
+
+.Contact3{
+
+    width:100%;
+    height:100px; 
+    margin:0px;
+    background-color:black;
+}
+
+.Contact3, li{
+
+    text-align: center;
+    font-weight: bold;
+}
+
+hr{
+    width: 1100px;
+    height: 1px;
+    margin-left: 250px;
+    background-color: silver;
+}
+
+ul,li,a{
+    
+    text-decoration:none;
+    font-size:14pt;
+    margin-top: 10px;
+    color:white;
+    display:inline-block;
+      
+}
+
+a:hover{
+
+    font-size: 15pt;
+    color: fuchsia;
+    text-decoration: none;
+    
+}
+
+.Frase{
+    color:white;
+    font-size:16pt;
+    text-align: center;
+   
+}
+
+
+#Button-up{
+    width: 60px;
+    height: 60px;
+    background-color: fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border:4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0); /*so that the button is not seen when scrolling */
+}
+
+#Button-up:hover{
+
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+#Button-down{
+    width: 60px;
+    height: 60px;
+    margin-left: 310px;
+    margin-top: -40px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+#Button-up:hover{
+
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+#Error{
+
+    width: 200px;
+    height: 50px;
+    color:black;
+    display: none;
+    background-color: aliceblue;
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.Netz3{
+
+    width: 1200px;
+    height: 250px;
+    padding: 5px;
+    margin-left: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Git{
+
+    width: 350px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/*-----------------------KEYFRAMES----------------------------------*/
+
+@keyframes movimiento{
+    0%{
+        transform: translateX(3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/*----------------//Formular-Contact  //----------------------*/
+
+#FormularContainer{
+   
+    width: 1450px;
+    height: 800px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    border:2px solid silver; 
+    border-radius: 20px;
+    background-image: url("Bild/Background/Background.jpg");
+    
+  
+}
+
+#formulario{ /*Main Form*/
+    width: 700px;
+    height: 700px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+     
+}
+
+.Formulario1{    
+
+    width: 750px;
+    height: 700px;
+    padding-left: 50px;  
+    padding-top: 20px;
+    
+}
+
+.Formulario2{    
+
+    width: 750px;
+    height: 700px;
+    padding-left: 50px;  
+    padding-top: 20px;
+    
+       
+}
+
+.formulario__label{
+
+    color:white;
+    font-size: 16pt;
+    margin-left: 10px;  
+}
+
+.formulario__input{
+
+    padding: 8px;
+    width: 300px;
+
+ 
+}
+
+#Menssage1{  /*TEXTAREA*/
+    width: 600px;
+    height: 200px;
+    margin-left: 0px;
+    
+}
+
+.formulario__btn{   /*Button Contact*/
+
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 200px;
+    height: 50px;
+    margin-left: 220px;
+    margin-top: 200px;
+    color: white;
+    font-size: 16pt;
+    border: 2px solid;
+    background:linear-gradient(to right, transparent 50%, rgb(244, 36, 188) 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease; 
+}
+
+.formulario__btn:hover {
+    background-position: right;
+    color: white;
+}
+
+.titulo{
+    width: 600px;
+    height: 100px;
+    margin-left: 450px;
+    margin-top: -500px;
+}
+
+.formulario__label {
+	
+    font-size: 16pt;
+	cursor: pointer;
+   
+}
+
+.formulario__grupo-input {
+	width: 310px;
+    height: 45px;
+    margin-top: 20px;
+    
+}
+
+.formulario__grupo-input-Textarea {
+	width: 300px;
+    height: 250px;
+   
+}
+
+.formulario__input {
+	width: 300px;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 45px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {  /*Border-Click*/
+	border: 3px solid fuchsia;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__grupo-input-Textarea:focus {  /*Border-Click*/
+	border: 3px solid fuchsia;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+
+.formulario__input-error {   /* Menssage Error */
+	font-size: 16px;
+    margin-left: 20px;
+    display: none;
+	
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {  /* Icon */
+	
+    margin-top: 10px;
+    margin-left: -30px;
+    position: absolute;
+	opacity: 0;
+}
+
+
+.formulario__mensaje {
+	width: 450px;
+    height: 45px;
+    padding: 10px;
+	background: #F66060;
+	border-radius: 3px;
+	margin-left: -330px;
+	margin-top: 300px;
+    display: none;
+  
+}
+
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+
+.formulario__mensaje-exito {
+	font-size: 24px;
+	color: #119200;
+	display: none;
+    margin-top: 50px;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ------------- Stile für die Validierung / Styles for Validation--------------------- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+.Infos{
+    
+    width: 600px;
+    height: 300px;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-top: 50px;  
+   
+}
+
+
+/* -------SUCCESSFUL MESSAGE--------*/
+
+.form_wrap{
+    width: 1050px;
+    height: 450px;
+    margin: 50px auto;
+    display: flex;
+    background-image: url("Bild/Background/Background1.jpg");
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.menssage-successfully{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menssage-successfully h1{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menssage-successfully a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/*-----------------------//RESPONSIVE Tablet Screen Size 1000 X 800 //----------------------------------*/
+
+@media  (max-width: 1000px) and (min-width: 800px){
+   
+    /*----HOME PAGE----*/
+
+    #Menu{
+
+        width: 90%;
+        margin: 0px;
+        z-index: 1000;
+        top:0;
+    }
+
+    .MenuBar{
+        width: 250px;
+        margin-left: -20px;
+       
+    }
+   
+    .MenuBar,li,a{
+        
+        font-size: 12px;
+        width: 130px;
+    }
+
+    .oe_menu a:after{
+
+        width: 80%;
+    }
+
+    /*-------*/
+   
+    .carousel-caption{
+
+        width: 50px;
+        height: 20px;
+    }
+    
+    .intro1{
+
+        width: 90%;
+        height: 500px;
+        padding: 20px;
+          
+    }
+
+    .Biography1{
+
+        width: 800px;
+        height: 350px;
+        padding-left: 50px;
+        margin-top: 50px;
+       
+        
+    }
+
+    .Image{
+
+        width: 200px;
+        height: 350px;
+        margin-left: -10px;
+        justify-content:start;
+        
+    }
+
+    .Image, img{
+
+       width: 650px;
+       height: 300px;
+       margin-left: 80px;
+    }
+
+    #Click{
+
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    #Button-down{
+
+        display: none;
+    }
+
+
+   /*-------*/
+
+    #MyCV{
+
+        margin-top: -300px;
+    }
+
+    #MyProfil{
+
+        width: 800px;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: -100px;
+        background-size: 700px;
+    }
+
+    .MyIntro1{
+
+        width: 400px;
+        height: 500px;
+        margin-top: 5px;
+    }
+
+    .MyPhoto{
+
+       width: 200px;
+       height: 200px;
+       margin-left: -100px;
+    }
+
+    .MyPhoto, img {
+
+        width: 200px;
+        height: 200px;
+        margin-left: 0px;
+    }
+
+    .MyPhotoContainer{
+
+        display: none;
+    }
+
+    .Netz2{
+
+        display:none;
+    }
+
+    .Netz1{
+
+        display:none;
+    }
+
+    .linea1{
+
+        display: none;
+    }
+
+    .linea{
+
+        display: none;
+    }
+
+    #Formation{
+
+        width: 600px;
+        height: 900px;
+        margin-left: 120px;
+        margin-top: 50px;
+       
+    }
+
+    #Formation1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        
+    }
+
+    #Formation2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        width: 500px;
+          
+    }
+
+    .ContainerEduc1{
+
+        width: 490px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 120px;
+    }
+
+    .ContainerEduc2{
+
+        width: 490px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 140px;
+    }
+
+    
+    #Experience{
+        width: 600px;
+        height: 700px;
+        margin-top: 350px;
+
+    }
+
+    .Experience{
+
+        width: 480px;
+        height: 300px;
+        margin-left: 70px;
+    }
+
+    #Button-up{
+
+        width: 30px;
+        height: 30px;
+    }
+
+    #Kenntnisse{
+
+        width: 600px;
+        margin-top: -100px;
+        margin-left: 100px;
+    }
+
+    .Tabla1,.Tabla2,.Tabla3,.Tabla4,.Tabla5,.Tabla6{
+
+        width: 400px;
+        margin-top: 50px;
+        margin-left: -20px;
+       
+    }
+
+    .ContainerIntro1{
+
+        display: none;
+         
+    }
+
+    .MyLogo{
+        display: none;
+    }
+
+    .ContainerIntro2{
+
+       width: 750px;
+       height: 200px;
+       padding: 20px;
+       margin-top: -400px;
+       margin-left: 120px;
+       margin-bottom: 100px;
+       
+    }
+
+
+    /*Footer*/
+
+    #ContainerFooter{
+
+        width: 100%;
+        height: 500px;
+        background-color: #606060;
+        margin: 0px;
+        
+    }
+
+    #Menssage{  /*Button Say Hello*/
+
+        width: 200px;
+        height: 60px;
+        margin-left: 270px;
+        border: 2px solid silver;
+        background:linear-gradient(to right, transparent 50%, rgb(244, 36, 188) 50%) no-repeat left / 200%;
+        transition: background-position 0.3s ease;  
+
+    }
+
+    #Menssage:hover {
+        background-position: right;
+        color: white;
+    }
+    
+    .Contact1{
+        width: 100%;
+        height: 400px;
+        border:none;
+        margin: 0px;
+        justify-content: center;
+        
+    }
+
+    .Contact2{
+
+        display: none;
+    }
+ 
+    .Contact3{
+        
+        width: 100%;
+        height: 100px; 
+        margin: 0px;
+       
+    }
+
+    .Contact3,li{
+        
+       text-align: center;
+       font-size: 12pt;
+       
+    }
+
+    /*-----FONSIZE------*/
+
+    h1{
+
+        font-size: 24pt;
+    }
+
+    h2{
+
+        font-size: 26pt;
+        text-align: center;
+    }
+    h6{
+
+        font-size: 14pt;
+    }
+    .Font1{
+
+        font-size: 16pt;
+    }
+
+    .Font3{
+
+        font-size: 36pt;
+    }
+
+    .Font4{
+
+        font-size: 18pt;
+        text-align: left;
+    }
+
+    .Font5{
+
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    .Font6{
+
+        font-size: 40pt;
+         
+    }
+
+    .Font8{
+
+        font-size: 26pt;
+    }
+
+    .Font9{
+
+        font-size: 26pt;
+    }
+
+    .Font10{
+
+        font-size: 18pt;
+        text-align: left;
+    }
+   
+    .Frase{
+
+        font-size: 16pt;
+    }
+
+    p{
+
+        font-size: 10pt;
+    }
+
+    hr{
+
+        display: none;
+    }
+
+    /*----*/
+
+    #FormularContainer{
+
+        width: 850px;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-bottom: 500px;
+      
+    }
+
+    .Formulario1{
+
+        width: 700px;
+        height: 350px;
+        margin-left: 30px;
+        margin-top: -10px;
+      
+    }
+
+    .formulario__label{
+
+        font-size: 14pt;
+    }
+   
+    .formulario__input{
+
+        width: 300px;
+        height: 40px;
+    }
+
+    .Formulario2{
+
+        width: 720px;
+        height: 900px;
+        margin-top: -20px;
+        padding: 30px;
+        margin-left: 40px;
+      
+    }
+
+    #Menssage1{
+
+        width: 450px;
+        height: 150px;
+        margin-left: -5px;
+    }
+
+    .formulario__btn{
+
+        margin-top: 180px;
+    }
+
+    .img-gallery{
+
+        width: 900px;
+        height: 2200px;
+        margin-left: 50px;
+         
+    }
+
+    .Phrase{
+
+        width: 400px;
+        height: 100px;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 200px;
+    }
+
+    .Back{
+
+        width: 80px;
+        height: 40px;
+    }
+
+    .Netz3{
+
+        margin-left: 40px;
+    }
+   
+}
