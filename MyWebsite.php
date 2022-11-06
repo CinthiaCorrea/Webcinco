@@ -23,230 +23,126 @@
         require_once "Include/Slider1.php";
                         
     ?>
-    
-    <div id="MyCV">
-
-        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">About me</p><hr class="line1"></hr>
-
-        <div id="MyProfil" data-aos="fade-up">
-
-            <div class="MyIntro1" data-aos="fade-right">
-
-                <h1 data-aos="fade-up">Cinthia Correa! <img src="Bild/Icon/rose.png" style="width:60px;height:60px;margin-left:5px;"></h1><br>
-                <p>My interest in web development started in 2021, when I won a scholarship to study a web development course in Austria.</p>
-                <p> I have good knowledge with frontend and backend techniques. I love structure and order and I am also very detailed so I perfect every missing detail.</p>
-                <p>I enjoy spending time fixing small details and optimizing web applications. I also like to work in a team, it's fun and fast!</p>
-
-                <p class="Font4">As the saying goes:</p>
-                <p> „Two heads are better than one“</p>
-              
-            </div>
-            
-            <div class="MyPhoto" data-aos="fade-left"><img src="Bild/Foto.jpg" style="width:100%;height:auto;"></div> 
+    <div id="ContainerIntro1">
+        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">About me</p>
+        <div class="MyProfil" data-aos="fade-up">
             <div class="MyPhotoContainer" data-aos="zoom-in"></div>
+            <div class="MyPhoto1" data-aos="fade-left"><img src="Bild/Foto.jpg" style="width:100%;height:auto;border-radius: 5px;margin-left:60px;"></div>
+            <p class="Font4"> My interest in the world of information technology began when I was a teenager. I was very curious about how a computer could perform so many things and in a very effective way.</p>
+            <p class="Font4">That is why I decided to do a bachelor's degree in the area of technology sciences and thus be able to investigate what is behind the whole technological world.</p>
+            <p class="Font4">My inclination to Web Developer began in 2021, when I won a scholarship to study a web development course in Austria, from there I was enchanted by the world of the Word Wide Web</p>
+            <p class="Font4"> and I am fascinated to continue learning in this area.<p>
+            <div class="MyPhoto2" data-aos="fade-right"><img src="Bild/Icon/Computer.png" style="width:100%;height:auto;border-radius: 10px;"></div>
+            <p class="Font4">I have good knowledge with frontend and backend techniques.Also I have the ability to create dynamic pages with a wide variety of colors that suit each style<p>
+            <p class="Font4">I enjoy spending time fixing small details and optimizing web applications to make them more effective and robust.</p>
+            <p class="Font4">I'm glad you're here so you can see my works.</p><br><br>
+            <p class="Font5">“COMMENTING CODE IS LIKE CLEANING THE BATHROOM, NO ONE WANTS DO IT, BUT THE RESULT IS ALWAYS A MORE ENJOYABLE EXPERIENCE FOR YOURSELF
+            AND YOUR GUESTS” </p>
+            <p class="Font5">– Ryan Campbell</p>
             
         </div>
-
-        <div class="Netz1">
-            <div class="Git1"><a href="https://github.com/CinthiaCorrea"><img src="Bild/Icon/github.png" style="width:30px;height:30px;margin-left:5px;"></a></div>
-            <div class="Git2"><a href="https://www.linkedin.com/in/cinthia-diana-correa-ayala-b01782233/"><img src="Bild/Icon/linkedin.png" style="width:30px;height:30px;margin-left:5px;"></a></div>
-            <div class="Git3"><a href="https://twitter.com/"><img src="Bild/Icon/twitter.png" style="width:30px;height:30px;margin-left:5px;"></a></div>
-        </div>  
-        <div class="Netz2" >
-            <a href="mailto:cinthiacorrea617@gmail.com">cinthiacorrea617@gmail.com</a>
-        
-        </div>
-
-    </div>
- 
-    <div id="Formation">
-        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Formation</p><hr class="line3"></hr>
-        <div id="Formation1"  data-aos="fade-up">
-           
-            <div class="ContainerEduc1" data-aos="fade-right">
-
-                <p class="Font5">Business Software Developer</p><br>
-                <p class="Font1">University of Applied SciencesCampus02</p><br><br>
-                <p class="Font1">01.12.2021 - 28.02.2022 </p><br>
-                <p class="Font1">Austria</p><br>
-
-            </div>    
-
-            <div class="ContainerEduc1" data-aos="fade-left">
-
-                <p class="Font5">Web Developer</p><br>
-                <p class="Font1">Vocational Advancement Institute Bildung Freude Inklusive</p><br>
-                <p class="Font1">05.2021 - 12.2021</p><br>
-                <p class="Font1">Austria</div>
-
-            </div>  
-
-        </div>
-        
-    </div>
-    <div id="Formation2"  data-aos="fade-up">
-        <div class="ContainerEduc2" data-aos="fade-right">
-
-            <p class="Font10">Certificate of Software Programmierer</p><br><br>
-            <p class="Font1">Universidad Tecnologica Intercontinental</p><br>
-            <p class="Font1">Paraguay - 2008 <p><br>
-
+        <div class="SocialNetzworks" >
+            <div class="Github"><a href="https://github.com/CinthiaCorrea"><img src="Bild/Icon/github.png" style="width:50%;height:auto;"></a></div>
+            <div class="Github"><a href="https://www.linkedin.com/in/cinthia-diana-correa-ayala-b01782233/"><img src="Bild/Icon/linkedin.png" style="width:50%;height:auto;"></a></div>
+            <div class="Github"><a href="https://twitter.com/cinthia151188"><img src="Bild/Icon/twitter.png" style="width:50%;height:auto;"></a></div>
         </div> 
-
-        <div class="ContainerEduc2" data-aos="fade-left">
-
-            <p class="Font5">High school in computer science</p><br><br>
-            <p class="Font1">College Miguel Àngel Rodrìguez</p><br>
-            <p class="Font1">Paraguay - 2006<p><br>
-        </div>
-
-    </div>
-
-    <div id="Experience">
-        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Experience</p><hr class="line1"></hr>
-        <div class="Experience" data-aos="fade-up">
+        <div class="Emailadresse" >
+            <p><a href="mailto:cinthiacorrea617@gmail.com">cinthiacorrea617@gmail.com</a></p>
         
-            <p class="Font5">Junior Software Developer</p> <br> 
-            <p class="Font1">Bautista Hospital </p><br> 
-            <p class="Font1">08.2010 - 08.2011</p><br>
-            <p class="Font1">Paraguay</p><br> 
-        </div>
+        </div> 
+       
     </div>
 
-    <div id="Kenntnisse">
-        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Skills</p><hr class="line1"></hr>
-        <div id="Skils">
-            <table class="Tabla1" data-aos="fade-up">
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">WEB ENTWIKLUNG FRONTEND</p> <br> 
-                <tr>
-                    <td><h6>HTML(5)</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>CSS(3)</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>JAVASCRIPT</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>JQUERY</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-            </table> <br>  <br> <br>
-            <table class="Tabla2" data-aos="fade-up">
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">WEB ENTWIKLUNG BACKEND</p> <br> 
-                <tr>
-                    <td><h6>PHP</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>JSON</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>AJAX</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>SEO</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                </tr>
-                
-            </table><br> <br> <br> <br>
-            <table class="Tabla3" data-aos="fade-up">
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">DATABASE SYSTEMS</p> <br> 
-                <tr>
-                    <td><h6>MYSQL</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                <tr>
-                    <td><h6>PHPMYADMIN</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>MYSQL-SERVER</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                </tr>
-                <tr>
-                    <td><h6>POSTGRESSQL</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                </tr>
+    <?php
             
-            </table><br> <br> <br> <br> 
-            <table class="Tabla4" data-aos="fade-up">
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">SOFTWARE DEVELOPER</p> <br> 
-                <tr>
-                    <td><h6> JAVA </h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                <tr>
-                    <td><h6>OBJECT ORIENTATED PROGRAMMING</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                
-            </table><br> 
+        require_once "Include/Slider2.php";
+                            
+    ?>
+    
+    <p class="Font11" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Website & Design services at a glance</p>
+    <h3 data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">The website should serve as the central piece for all your marketing processes. With a good combination of colors,</h3>
+    <h3 data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">the magic of the perfect design for your company or business is created.</h3>
+    
+    <div id="ContainerIntro2">
+        <figure data-aos="fade-up">
+            <img src="Bild/Icon/Logo.jpg" >
+            <div class="capa">
+                <p class="Font5">Logo design</p>
+                <p class="Font12">Logos are one of the top identifying features of companies and important for the success of a brand.</p>
+                <p class="Font12">Sometimes it can also be important to modernize your logo a bit over the years.</p>
+            </div>
+        </figure> 
 
-            <table class="Tabla5" data-aos="fade-up"><br><br><br>
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">AGILES PROJEKTMANAGEMENT</p> <br> 
-                <tr>
-                    <td><h6> SCRUM</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                <tr>
-                    <td><h6>KAMBAN</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                
-            </table><br><br><br><br>
-            <table class="Tabla6" data-aos="fade-up">
-                <p class="Font10" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">LANGUAGE</p> <br> 
-                <tr>
-                    <td><h6> SPANISH</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                <tr>
-                    <td><h6>GERMAN</h6></td>
-                    <td>&#11088;&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                <tr>
-                    <td><h6>ENGLISH</h6></td>
-                    <td>&#11088;&#11088;&#11088;</td>
-                
-                </tr>
-                
-            </table>
+        <figure data-aos="fade-up">
+            <img src="Bild/Icon/responsive.png">
+            <div class="capa">
+            
+                <p class="Font5">Responsive design</p>
+                <p class="Font12">Responsive or adaptive web design is a web design technique that seeks the correct display of the same page on different devices.</p>
+                <p class="Font12">So that it adapts to your desktop computer to mobile devices and tablets..</p>
+    
+            </div>
+        </figure>
 
-        </div>
+        <figure data-aos="fade-up">
+            <img src="Bild/Icon/color.jpg">
+            <div class="capa">
+                <p class="Font5">Fusion of colors</p>
+                <p class="Font12">Explosion of color for your web page in a striking and elegant way according to your expectations delighted to create them!</p>
+                
+            </div>
+        </figure>
+
+        <figure data-aos="fade-up">
+            <img src="Bild/Icon/javascript.jpg" >
+            <div class="capa">
+                
+                <p class="Font5">Animations</p>
+                <p class="Font12">Explosion of color for your web page in a striking and elegant way according to your expectations delighted to create them!</p>
+                
+            </div>
+        </figure>
+
+        <figure data-aos="fade-up">
+            <img src="Bild/Icon/femenino.jpg">
+            <div class="capa"> 
+                <p class="Font5">Femenine Touch!</p>
+                <p class="Font12">Feminine touch is a plus to give a good aesthetic and detailed look to your website</p>
+            
+            </div>
+        </figure>
+
     </div>
-      
-    <div class="ContainerIntro1">
-        <p class="Font6" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Some Things I've Built</p><hr class="line1"></hr><br>
-        <div id="Logo" data-aos="fade-up"><img src="Bild/Screenshots/4.jpg" style="width:1000px;height:200px;margin-left:-10px;"></div>
+
+    <div id="ContainerIntro3">
+        <p class="Font11" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">Some Things I've Built</p><br>
+        <p class="Font12" data-aos="fade-right"data-aos-offset="100"data-aos-easing="ease-in-sine"><strong>TuBellezaShop.at!</strong> It is an online cosmetics store. This web page is a project that has been exclusively elaborated for the presentation of the final exam of the Web Developer course at bfi.</p>
+        <p class="Font12" data-aos="fade-right"data-aos-offset="100"data-aos-easing="ease-in-sine"> On this page you will find excellent fragrances from the 4 most used exclusive brands, also lines of makeup and body care.</p>
+        <p class="Font12" data-aos="fade-right"data-aos-offset="100"data-aos-easing="ease-in-sine">This page contains login for clients, registration of new clients, sections of information for the client, shopping cart, list of orders, and payment can be made through invoices.</p>
+
+        <div id="Logo" data-aos="fade-up"><img src="Bild/Screenshots/4.jpg" style="width:900px;height:200px;"></div>
         <div id="Projekt" data-aos="fade-up">
             <div class="Screen1" data-aos="fade-right">
-                <img src="Bild/Screenshots/1.jpg" style="width:450px;height:350px;">
-                <img src="Bild/Screenshots/2.jpg" onclick="openFulImg(this.src)" style="width:450px;height:350px;margin-top:50px;">
+                <img src="Bild/Screenshots/1.jpg" style="width:400px;height:300px;">
+                <img src="Bild/Screenshots/2.jpg" onclick="openFulImg(this.src)" style="width:400px;height:340px;margin-top:10px;">
             </div>
             <div class="Screen2" data-aos="fade-left">
-                <img src="Bild/Screenshots/3.jpg" style="width:460px;height:750px;">
+                <img src="Bild/Screenshots/6.jpg" style="width:450px;height:300px;">
+                <img src="Bild/Screenshots/5.jpg" style="width:450px;height:340px;margin-top:10px">
+               
+            </div>
+            <div class="Screen3" data-aos="fade-left">
+                
+                <img src="Bild/Screenshots/3.jpg" style="width:400px;height:650px;">
             </div>
         </div>
     </div>
     
-    <div class="ContainerIntro2" data-aos="fade-up">
+    <div id="ContainerIntro4" data-aos="fade-up">
         <div class="MyLogo"><img src="Bild/MyLogo.png" style="width:60%;height:auto;margin-top:-50px;margin-left:400px;" data-aos="flip-left"></div>
         <p class="Font1" data-aos="fade-right"data-aos-offset="100"data-aos-easing="ease-in-sine">Although I am currently looking for new opportunities, my inbox is always open.</p>
         <p class="Font1" data-aos="fade-right"data-aos-offset="100"data-aos-easing="ease-in-sine"> Whether you have a question or just want to say hi, I'll do my best to answer you!</p>
-        <a href="mailto:cinthiacorrea617@gmail.com"><button id="Menssage" data-aos="zoom-in-up">Say Hello!<img src="Bild/Icon/Cat.png" style="width:20%;height:auto;margin-left:50px;margin-top:-10px"></button></a>
+        <a href="mailto:cinthiacorrea617@gmail.com"><button id="Menssage" data-aos="zoom-in-up">Say Hello!<img src="Bild/Icon/Cat.png" style="width:20%;height:auto;margin-left:10px;margin-top:-10px"></button></a>
         
     </div>
        
